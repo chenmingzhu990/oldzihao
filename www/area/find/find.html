@@ -1,0 +1,174 @@
+<ion-view niew-title='首页' id='find' cache-view='false'>
+
+    <div class="headerBar">
+        <div class="headerBar-search">
+            <input type="text" maxlength="80" autocomplete="true" placeholder='试试输入你想要的，会有惊喜吗？'/>
+            <span>
+                <img src="img/find/discovery_search_black.png" alt="" />
+            </span>
+        </div>
+        <a href="#/login" class="headerBar-login">
+            <img src="img/find/shopping_cart_black.png" alt="" />
+        </a>
+    </div>
+
+
+    <ion-content id='find-content' class="scroll-content" scroll='false' lazy-scroll>
+
+        <!-- 顶部 -->
+        <div class="topBar"></div>
+            <div id="headerBar-bg"></div>
+
+       <!-- 功能 -->
+        <nav id='nav'>
+            <a href="{{item.href}}" ng-repeat='item in navData'>
+                <img image-lazy-src="{{item.img}}" alt="{{item.alt}}" image-lazy-loader="lines"/>
+               <h2>{{item.text}}</h2>
+            </a>
+        </nav>
+
+        <!-- 城市味道 -->
+        <div id="city">
+            <img image-lazy-src="img/find/ce0410_vertical.png" alt="" image-lazy-loader="lines"/>
+            <em>城市味道</em>
+        </div>
+
+        <!-- 地区味道 -->
+        <div id="cityTaste">
+            <div class="cityTaste-top">
+                <ion-scroll  direction="x" scrollbar-x='false'>
+                    <ul>
+                        <li ng-repeat='item in cityData'>
+                            <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                        </li>
+                    </ul>
+                </ion-scroll> 
+            </div>
+        </div>
+
+        <!-- 力荐好货 -->
+        <div id="city">
+            <img image-lazy-src="img/find/ce0410_vertical.png" alt="" image-lazy-loader="lines"/>
+            <em>力荐好货</em>
+        </div>
+
+        <!-- 产品 -->
+        <div id="goods">
+            <div id="product">
+                <div class="product-top">
+                    <img image-lazy-src="img/find/find_017.jpg" alt="" image-lazy-loader="lines"/>
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData1'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}" />
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="product">
+                <div class="product-top">
+                    <img src="img/find/find_024.jpg" alt="" />
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData2'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}" />
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+            <div id="product">
+                <div class="product-top">
+                    <img src="img/find/find_031.jpg" alt=""/>
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData3'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}"/>
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+            <div id="product">
+                <div class="product-top">
+                    <img src="img/find/find_038.jpg" alt=""/>
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData4'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}" />
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+            <div id="product">
+                <div class="product-top">
+                    <img src="img/find/find_045.jpg" alt=""/>
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData5'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}" />
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+            <div id="product">
+                <div class="product-top">
+                    <img src="img/find/find_052.jpg" alt=""/>
+                </div>
+                <div class="product-bottom">
+                    <div class="product-gray">
+                        <ion-scroll  direction="x" scrollbar-x='false'>
+                        <ul>
+                            <li ng-repeat='item in productData6'>
+                                <img ng-src="{{item.img}}" alt="{{item.img}}" />
+                                <p>{{item.text}}</p>
+                                <em>{{item.price}}</em>
+                            </li>
+                        </ul>
+                        </ion-scroll> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </ion-content>
+
+   
+   
+</ion-view>

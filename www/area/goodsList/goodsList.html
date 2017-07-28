@@ -1,0 +1,39 @@
+<ion-view niew-title='首页' id='goodsList' cache-view='false'>
+    
+    <ion-content class="scroll-content  has-header" scroll="false">
+        <header id="header">
+          <a href="#/tab/find" class="headerBar-login">
+            <img src="img/goodsList/login_back.png" alt="" />
+          </a>
+          <div class="headerBar-search">
+            <input type="text" placeholder='试试输入你想要的，会有惊喜吗？'/>
+            <span>
+                <img src="img/goodsList/discovery_search_black.png" alt="" />
+            </span>
+        </div>
+       
+        </header>
+        <nav id="nav">
+          <ul>
+            <li ng-class="$index==0?'nav-current':'nav-blur'" ng-repeat="item in categoryData"  ng-click="categoryLeftClick($event);getCategoryDetailData(item.typeNumber)">{{item.name}}</li>
+          </ul>
+        </nav>
+        <div id="pro">
+            <ion-content lazy-scroll>
+                <div class="pro-scroll">
+                    <div class="pro-warp">
+                        <div class="content">
+                          <div class="content-body">
+                            <li class="content-body-list" ng-repeat="item in categoryDetailData">
+                              <img image-lazy-src="{{item.src}}" alt="" image-lazy-loader="ios">
+                              <span>{{item.name}}</span>
+                            </li>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-content>
+        </div>
+    </ion-content>
+
+</ion-view>

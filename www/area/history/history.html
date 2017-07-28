@@ -1,0 +1,39 @@
+<ion-view niew-title='首页' id='history' hide-back-button="true" cache-view='false'>
+    
+  
+    <header class="topBar">
+      <a href="#/tab/home">
+        <img src="img/history/com_taobao_nb_sdk_web_view_title_bar_back.9.png" alt="" />
+      </a>
+      <span>故事</span>
+    </header>
+
+    <ion-content class="scroll-content">
+     <ion-refresher pulling-text='获取最新数据' refreshing-text='正在获取' on-refresh='func_refreshGoodsList()'></ion-refresher>
+
+        <!-- 产品 -->
+        <div id="product" ng-repeat="item in obj_goodsListData">
+           <div class="product-top">
+               <img ng-src="{{item.pic}}"/>
+               <h2>{{item.messages}}</h2>
+               <p>{{item.text}}</p>
+           </div>
+           <div class="product-bottom">
+               <img ng-src="{{item.img}}"/>
+               <div class="product-right">
+                   <span>{{item.time}}</span>
+                   <em></em>
+                   <img src="img/home/comment_gray.png" alt="" />
+                   <span>{{item.word}}</span>
+                   <img src="img/home/dingzhi_comment_view.png" alt="" />
+                   <span>{{item.view}}</span>
+               </div>
+             </div>
+         </div>
+
+
+     <ion-infinite-scroll ng-if='pms_isMoreItemsAvailable' on-infinite='func_loadMoreGoodsList()'></ion-infinite-scroll>
+
+     </ion-content>
+
+</ion-view>

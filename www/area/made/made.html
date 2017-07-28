@@ -1,0 +1,125 @@
+<ion-view niew-title='首页' id='made' cache-view='false'>
+
+      <ion-content id="made-content" class="scroll-content" scroll="false" lazy-scroll>
+
+      <!-- 入古定制 -->
+      <div id="order">
+          <img image-lazy-src="img/made/icon_dingzhi.png" alt="" image-lazy-loader="lines"/>
+      </div>
+
+      <!-- 定制栏 -->
+        <div id="do">
+            <ul>
+               <li class="active">
+                  <a href="javascript:;">推荐</a>
+                </li>
+                <li>
+                  <a href="javascript:;">古法美食</a>
+                </li>
+                <li>
+                  <a href="javascript:;">独家设计</a>
+                </li>
+                <li>
+                  <a href="javascript:;">百年技艺</a>
+                </li>
+                <li>
+                  <a href="javascript:;">文化体验</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="recommend">
+            <ol>
+                <li class="active">
+                    <!-- 轮播图 -->
+                    <div class="swiper-container" id='doSlide'>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" ng-repeat='item in doData'>
+                            <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- 返场商品 -->
+                    <div id="back">
+                        <div class="back-top">
+                                <img image-lazy-src="img/made/ce0410_vertical.png" alt="" image-lazy-loader="lines"/>
+                                <em>返场商品</em>  
+                            <a href="javascript:;">更多 ></a>
+                        </div>
+                    </div>
+
+                    <!-- 返场商品列表 -->
+                    <div id="backList">
+                        <div class="back-bottom">
+                            <ion-scroll  direction="x" scrollbar-x='false'>
+                              <div class="backBig">
+                                  <div class="backSmall" ng-repeat='item in backData'>
+                                      <img ng-src="{{item.img}}" alt="{{item.alt}}"  class="img1" />
+                                      <span>
+                                          <p>{{item.text}}</p>
+                                          <em>{{item.price}}</em>
+                                      </span>
+                                      <img src="img/made/dingzhi_go_back_goods_buy_num.png" alt="{{item.alt}}" class="img2" />
+                                      <h3>{{item.sale}}</h3>
+                                  </div>
+                              </div>
+                            </ion-scroll> 
+                        </div>
+                    </div>
+
+                    <!-- 定制故事 -->
+                    <div id="back">
+                        <div class="back-top">
+                            <img image-lazy-src="img/made/ce0410_vertical.png" alt="" image-lazy-loader="lines"/>
+                            <em>定制故事</em>  
+                        </div>
+                    </div>
+
+                    <!-- 故事列表 -->
+                    <div id="old">
+                      <div class="oldList">
+                        <ion-scroll  direction="x" scrollbar-x="false">
+                        <div class="oldBig">
+                          <div class="oldSmall" ng-repeat='item in oldData'>
+                            <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                          </div>
+                        </div>
+                        </ion-scroll> 
+                      </div>
+                    </div>
+
+                    <!-- 全部订制 -->
+                    <div id="back">
+                        <div class="back-top">
+                            <img src="img/made/ce0410_vertical.png" alt="" />
+                            <em>全部定制</em>  
+                        </div>
+                    </div>
+
+                    <!-- 定制列表 -->
+                    <div id="all"></div>
+                </li>
+                <li>
+                   <!-- 古法美食 -->
+                    <div id="foods"></div>
+                </li>
+                <li>
+                  <!-- 独家设计 -->
+                  <div id="design"></div>
+                </li>
+                <li>
+                  <!-- 百年技艺 -->
+                  <div id="skill"></div>
+                </li>
+                <li>
+                <!-- 文化体验 -->
+                 <div id="culture"></div>
+                </li>
+            </ol>
+        </div>
+        
+    </ion-content>
+   
+</ion-view>

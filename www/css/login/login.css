@@ -1,0 +1,183 @@
+#login ion-content {
+     overflow: scroll;
+    background: url(../../img/login/login_bg.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+#login .close {
+    text-decoration: none;
+    display: block;
+}
+
+#login .close img {
+    width: 80px;
+}
+
+#login #welcome {
+    margin: 0 auto;
+    padding: 15px 15px 50px;
+    text-align: center;
+}
+
+#login #welcome .welcomeTop img {
+    width: 250px;
+}
+
+#login #welcome .welcomeCenter {
+    width: 100%;
+    height: 121px;
+    margin-top: 20px;
+    border: 1px solid #929197;
+    border-radius: 5px;
+    background: #fff;
+    color: #8f8e94;
+    font-weight: bold;
+}
+
+#login #welcome .welcomeCenter .iphone {
+    height: 60px;
+    border-bottom: 1px solid #929197;
+    border-radius: 10px 10px 0 0;
+    padding: 20px 10px;
+}
+
+#login #welcome .welcomeCenter .iphone span {
+    float: left;
+    margin-right: 10px;
+}
+
+#login #welcome .welcomeCenter .iphone input {
+   float: left;
+   width: 250px;
+   margin-top: -8px;
+}
+
+#login #welcome .welcomeCenter .yanzheng {
+    padding: 20px 10px;
+}
+
+#login #welcome .welcomeCenter .yanzheng span {
+    float: left;
+    margin-right: 10px;
+}
+
+#login #welcome .welcomeCenter .yanzheng input {
+    float: left;
+    margin-top: -8px;
+}
+
+#login #welcome .welcomeCenter .yanzheng em {
+    width: 1px;
+    height: 15px;
+    background: #000;
+    float: left;
+    margin-top: 5px;
+}
+
+#login #welcome .welcomeCenter .yanzheng u {
+    text-decoration: none;
+    margin-top: -7px;
+    font-weight: bold;
+    font-family: '宋体';
+    letter-spacing: 1px;
+    color: #000;
+}
+
+#login #welcome .welcomeBottom {
+    margin-top: 20px;
+    text-align: left;
+    color: #908f95;
+}
+
+#login #welcome .welcomeBottom span img {
+    width: 8px;
+    vertical-align: middle;
+}
+
+#login #welcome .welcomeBottom span em {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+#login #welcome .welcomeBottom span a {
+    color: #dcc189;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#login #welcome .welcomeBottom .sure {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background: #e7e7e7;
+    margin-top: 35px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+#login #way {
+    margin-top: 65px;
+    width: 100%;
+    text-align: center;
+}
+
+#login #way ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+   
+}
+
+#login #way ul li {
+    flex: 1;
+    float: left;
+    margin: 0 35px;
+}
+
+#login #way ul li a {
+    text-decoration: none;
+}
+
+#login #way ul li img {
+    width: 50px;
+}
+
+#login #way ul li span {
+    font-size: 13px;
+    color: #000;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    margin-top: 5px;
+}
+
+#login .goLogin {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#login .goLogin span {
+    vertical-align: middle;
+    display: inline-block;
+    color: #000;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#login .goLogin img {
+    vertical-align: middle;
+    display: inline-block;
+    width: 7px;
+}

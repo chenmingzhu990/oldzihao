@@ -1,0 +1,193 @@
+#mine ion-content {
+    background: #f5f6f5;
+}
+
+#mine #headerBar {
+    width: 100%;
+    height: 150px;
+    background: url(../../img/mine/my_bg.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    position: relative;
+}
+
+#mine #headerBar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+#mine #headerBar a img {
+    width: 65px;
+}
+
+#mine #headerBar a em {
+    display: block;
+}
+
+#mine #headerBar span {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#mine #headerBar span img {
+    width: 20px;
+}
+
+#mine #list {
+    width: 100%;
+    padding: 30px 0 15px;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 10px;
+}
+
+#mine #list ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#mine #list ul li {
+    float: left;
+    text-align: center;
+    flex: 1;
+}
+
+#mine #list ul li img {
+    width: 30px;
+}
+
+#mine #list ul li h2 {
+    font-size: 12px;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/*我的订单*/
+#mine #order {
+    width: 100%;
+    margin-top: 10px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#mine #order .order-top {
+    width: 90%;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+#mine #order .order-top a {
+    float: right;
+    text-decoration: none;
+    color: #666;
+}
+
+/*订单列表*/
+#mine #orderList {
+    width: 100%;
+    background: #fff;
+    padding: 30px 0 10px;
+}
+
+#mine #orderList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+#mine #orderList ul li {
+    float: left;
+    flex: 1;
+    text-align: center;
+}
+
+#mine #orderList ul li img {
+    width: 25px;
+}
+
+#mine #orderList ul li h2 {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/*消息列表*/
+#mine #messages {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 10px;
+}
+
+#mine #messages ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mine #messages ul li {
+    float: left;
+    width: 25%;
+    justify-content: center; 
+    align-items: center; 
+    display: -webkit-flex;
+    border-bottom: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+}
+
+#mine #messages ul li:nth-child(4){
+    border-right: none;
+}
+
+#mine #messages ul li:nth-child(n+5) {
+    border-bottom: none;
+}
+
+#mine #messages ul li:nth-child(2) {
+    position: relative;
+}
+
+#mine #messages ul li span {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#mine #messages ul li span img {
+    width: 25px;
+}
+
+#mine #messages ul li h2 {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#mine #messages ul li em {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#mine #messages ul li em img {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+

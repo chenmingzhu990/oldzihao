@@ -1,0 +1,93 @@
+<ion-view niew-title='首页' id='home' cache-view='false'>
+
+    <!-- 顶部 -->
+    <div class="headerBar">
+        <div id="headerBar-bg"></div>
+        <div class="headerBar-logo">
+            <img src="img/home/index_tab_left_white.png" alt="" />
+        </div>
+        <div class="headerBar-search">
+            <input type="text" autocomplete="true" placeholder='发现中国好东西'/>
+            <span>
+                <img src="img/home/search_gray.png" alt="" />
+            </span>
+        </div>
+        <a href="#/login" class="headerBar-login">
+            <img src="img/home/shopping_cart_white.png" alt="" />
+        </a>
+    </div>
+
+
+
+    <ion-content id='home-content' class="scroll-content" scroll="false"  lazy-scroll>
+        <!-- 轮播 -->
+        <div class="swiper-container" id='headerSlide'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat='item in headerSlideData'>
+                    <img ng-src="{{item.img}}" alt="{{item.alt}}"/>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- 功能 -->
+        <nav id='nav'>
+        <a href="{{item.href}}" ng-repeat='item in navData'>
+             <img image-lazy-src="{{item.img}}" alt="{{item.alt}}" image-lazy-loader="lines" />
+               <h2>{{item.text}}</h2>
+        </a>
+        </nav>
+
+        <!-- 时间条 -->
+        <div id="headerLine">
+            <div class="headerLine-big">
+                <div class="headerLineTime"> 
+                    <span>
+                        <img src="img/home/afternoon2.gif" alt="" class="img1" />
+                        <img src="img/home/good_afternoon.png" alt="" class="img2"/> 
+                    </span>
+                    
+                    <div class="swiper-container" id='headerLineSlide'>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ng-repeat='item in headerLineData'><P>{{item.text}}</P> </div>
+                        </div>  
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- 最新定制 -->
+          <div id="new">
+            <div class="new-in">
+               <img image-lazy-src="img/home/new_dingzhi.png" alt="" image-lazy-loader="lines"/> 
+            </div>
+            
+            <div class="new-out">
+                <ion-scroll  direction="x" scrollbar-x='false'>
+                <ul>
+                    <li ng-repeat='item in newData'>
+                        <img ng-src="{{item.img}}" alt="{{item.alt}}"/>
+                        <span>
+                            <p>{{item.text}}</p>
+                            <em>{{item.price}}</em>
+                            <a href="javascript:;">{{item.word}}</a>
+                        </span>
+                    </li>
+                </ul>
+                </ion-scroll> 
+            </div>
+        </div>
+
+        <!-- 每日推荐 -->
+        <div id="recommend">
+            <h2>每日推荐</h2>
+        </div>
+
+        <!-- 产品 -->
+        <div id="goods">
+        </div>
+
+    </ion-content>
+
+</ion-view>
+

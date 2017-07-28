@@ -1,0 +1,63 @@
+<ion-view niew-title='首页' id='mine' cache-view='false'>
+    
+    <ion-content>
+        <!-- 登录 -->
+        <div id="headerBar">
+            <a href="#/login">
+               <img src="img/mine/my_head.png" alt="" />
+               <em>点击登录</em> 
+            </a>
+           <span>
+               <img ng-src="img/mine/my_setting.png" alt="" />
+           </span>
+        </div>
+    
+        <!-- 菜单栏 -->
+        <div id="list">
+            <ul>
+                <li ng-repeat='item in listData'>
+                    <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                    <h2>{{item.text}}</h2>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 我的订单 -->
+        <div id="order">
+            <div class="order-top">
+                <em>我的订单</em>
+                <a href="javascript:;">查看全部 ></a>
+            </div>   
+        </div>
+
+        <!-- 订单列表 -->
+        <div id="orderList">
+            <ul>
+                <li ng-repeat='item in orderListData'>
+                    <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                    <h2>{{item.text}}</h2>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 消息列表 -->
+        <div id="messages">
+            <ul>
+                <li ng-repeat='item in messagesData'>
+                    <span>
+                        <img ng-src="{{item.img}}" alt="{{item.alt}}" />
+                        <h2>{{item.text}}</h2> 
+                    </span>
+                    <em>
+                       <img ng-src="{{item.pic}}"/>
+                    </em>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </ion-content>
+
+   
+</ion-view>

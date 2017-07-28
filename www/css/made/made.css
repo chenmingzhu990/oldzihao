@@ -1,0 +1,337 @@
+#made #made-content {
+    background: #f5f6f5;
+    overflow: scroll;
+}
+
+/*入古定制*/
+#made #order {
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*定制栏*/
+#made #order img {
+    width: 90px;
+}
+
+#made #do {
+    width: 100%;
+    background: #fff;
+}
+
+#made #do ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#made #do ul li {
+    float: left;
+    flex: 1;
+    text-align: center;
+}
+
+#made #do ul li.active {
+    border-bottom: 2px solid #ce0410;
+}
+
+#made #do ul li.active a {
+    color: #ce0410;
+}
+
+#made #do ul li a {
+    width: 100%;
+    color: #666;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+#made #recommend ol {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#made #recommend ol li {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#made #recommend ol li.active {
+    display: block;
+}
+
+#made #recommend ol li #doSlide img {
+    width: 100%;
+    height: 150px;
+}
+
+/*返场商品*/
+#made #back {
+    width: 100%;
+    background: #fff;
+    margin-top: 5px;
+   
+}
+
+#made #back .back-top {
+    width: 93%;
+    margin: 0 auto;
+    padding: 15px 0 0;
+}
+
+#made #back .back-top img {
+    width: 4px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#made #back .back-top em {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#made #back .back-top a {
+    text-decoration: none;
+    float: right;
+    color: #a5a5a5;
+}
+
+/*返场商品列表*/
+#made #backList {
+    width: 100%;
+    padding-top: 15px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#made #backList .back-bottom {
+    width: 100%;
+    height: 102px;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding-bottom: 16px;
+    background: #fff;
+    position: relative;
+}
+
+#made #backList .back-bottom .backBig {
+    width: 2100px;
+    height: 86px;
+    list-style: none;
+}
+
+#made #backList .back-bottom .backSmall {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-right: 10px;
+    padding: 1px;
+    border: 1px solid #e9e9e9;
+    position: relative;
+}
+
+#made #backList .back-bottom .backSmall .img1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#made #backList .back-bottom .backSmall span {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+}
+
+#made #backList .back-bottom .backSmall span p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    
+}
+
+#made #backList .back-bottom .backSmall span em {
+    color: #cf0b16;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: '微软雅黑';
+}
+
+#made #backList .back-bottom .backSmall .img2 {
+    width: 65px;
+    position: absolute;
+    right: -5px;
+    bottom: 2px;
+}
+
+#made #backList .back-bottom .backSmall h3 {
+    position: absolute;
+    right: 3px;
+    bottom: 9px;
+    z-index: 5;
+    color: #fff;
+    font-size: 9px;
+}
+
+/*故事列表*/
+#made #old {
+    width: 100%;
+    padding-top: 20px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#made #old .oldList {
+    width: 100%;
+    height: 84px;
+    margin: 0 auto;
+    margin-left: 12px;
+    background: #fff;
+    position: relative;
+}
+
+#made #old .oldList .oldBig {
+    width: 1140px;
+    height: 72px;
+    list-style: none;
+}
+
+#made #old .oldList .oldSmall {
+    float: left;
+    width: 180px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#made #old .oldList .oldSmall img {
+    width: 100%;
+}
+
+/*定制列表*/
+#made #all {
+    width: 100%;
+}
+
+#made #allList {
+    display: block;
+     background: #fff;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#made #allList .all-top {
+    width: 93%;
+    margin: 0 auto;
+}
+
+#made #allList .img1 {
+    width: 100%;
+    height: 170px;
+}
+
+#made #allList .all-bottom {
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 15px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#made #allList .all-bottom u {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#made #allList .all-bottom em {
+    color: #cf0b16;
+    float: right;
+    font-weight: bold;
+    font-family: '微软雅黑';
+}
+
+#made #allList .all-bottom .img2 {
+    width: 100%;
+    margin: 20px 0 15px;
+}
+
+#made #allList .all-bottom h2 {
+    float: left;
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+#made #allList .all-bottom h3 {
+    float: right;
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+#made #allList .all-footer {
+    width: 93%;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+#made #allList .all-footer p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#made #allList .all-footer p:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+#made #all #allList .all-footer p img,#made #foods #allList .all-footer p img,#made #design #allList .all-footer p img,#made #skill #allList .all-footer p img,#made #culture #allList .all-footer p img {
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#made #all #allList .all-footer p span,#made #foods #allList .all-footer p span,#made #design #allList .all-footer p span,#made #skill #allList .all-footer p span,#made #culture #allList .all-footer p span {
+    vertical-align: middle;
+}
+
+#made #allList .all-footer em {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    color: #000;
+}
+
+#made #allList .all-footer em img {
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+#made #allList .all-footer em span {
+    vertical-align: middle;
+    font-size: 12px;
+}

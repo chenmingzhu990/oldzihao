@@ -1,0 +1,369 @@
+#home #home-content {
+    overflow: scroll;
+    background: #f5f6f6;
+}
+
+#home .headerBar {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 2;
+}
+
+#home #headerBar-bg {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#home .headerBar-logo {
+    position: absolute;
+   left: 10px;
+   top: 5px;
+}
+
+#home .headerBar-logo img {
+    width: 60%;
+}
+
+#home .headerBar-search {
+   position: absolute;
+   left: 56px;
+   top: 3px;
+   right: 60px;
+   width: auto;
+   height: 35px;
+   background: #fff;
+   border-radius: 16px;
+}
+
+#home .headerBar-search span{
+    position: absolute;
+    left: 30%;
+    top: 10px;
+}
+
+#home .headerBar-search span img {
+    width: 60%;
+
+}
+
+#home .headerBar-search input {
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
+    color: #000;
+    position: absolute;
+    left: 38%;
+    top: 0;
+}
+
+#home .headerBar-login {
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+}
+
+#home .headerBar-login img {
+    width: 60%;
+    height: 100%;
+}
+
+/*轮播*/
+#home #headerSlide {
+    width: 100%;
+    height: 270px;
+}
+
+#home #headerSlide img {
+    width: 100%;
+    height: 100%;
+}
+
+#home .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 3px;
+}
+
+#home .swiper-pagination-bullet-active {
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border: #fff 1px solid;
+    border-radius: 3px;
+}
+
+/*功能*/
+#home #nav {
+    width: 100%;
+    background: #fff;
+}
+
+#home #nav a {
+    width: 25%;
+    height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#home #nav a img {
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    display: block;
+}
+
+#home #nav a h2 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*时间条*/
+#home #headerLine {
+    width: 100%;
+    height: 80px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#home #headerLine .headerLine-big {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+#home #headerLine .headerLineTime {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 0px;
+    bottom: 0px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+#home #headerLine span {
+    width: 65px;
+    height: 30px;
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+
+#home #headerLine span img {
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+}
+
+#home #headerLine #headerLineSlide {
+    width: 70%;
+    height: 30px;
+    position: absolute;
+    left: 85px;
+    top: 9px;
+}
+
+#home #headerLine #headerLineSlide p {
+    font-size: 12px;
+    color: #666;
+}
+
+/*最新定制*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#home #new {
+    width: 100%;
+    padding: 20px 0 10px;
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+#home #new .new-in {
+    width: 7%;
+    height: 100px;
+    display: inline-block;
+}
+
+#home #new .new-in img {
+    height: 100%;
+}
+
+#home #new .new-out {
+    width: 91%;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+#home #new ul {
+    width: 1200px;
+    height: 100%;
+    list-style: none;
+}
+
+#home #new ul li {
+    float: left;
+    width: 200px;
+    height: 100%;
+    border: 1px solid #eee;
+    margin-right: 15px;
+}
+
+#home #new ul li img {
+   float: left;
+   width: 50%;
+   height: 100%;
+   padding: 1px;
+}
+
+#home #new ul li span {
+    float: left;
+    width: 50%;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+#home #new ul li span p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+#home #new ul li span em {
+    color: #cf0b16;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: '微软雅黑';
+}
+
+#home #new ul li span a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #9e9e9e;
+    text-align: center;
+
+}
+
+/*每日推荐*/
+#home #recommend {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 15px 0 0;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+}
+
+#home #recommend h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*产品*/
+#home #product {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#home #product .product-top {
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#home #product .product-top img {
+    width: 100%;
+    height: 100%;
+}
+
+#home #product .product-top h2 {
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+#home #product .product-top p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#home #product .product-bottom {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+#home #product .product-bottom img {
+    width: 15%;
+}
+
+#home #product .product-bottom .product-right {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+#home #product .product-bottom .product-right span {
+    color: #666;
+    font-size: 11px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#home #product .product-bottom .product-right span:nth-of-type(2){
+    margin-right: 10px;
+}
+
+#home #product .product-bottom .product-right img {
+    width: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#home #product .product-bottom .product-right em {
+    width: 4px;
+    height: 4px;
+    background: #999;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
